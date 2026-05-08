@@ -28,9 +28,10 @@ GCS_VAL_PATH   = f"{GCS_DATA_PATH}/val"
 GCS_TEST_PATH  = f"{GCS_DATA_PATH}/test"
 
 # ── BigQuery ──
-BQ_SOURCE_TABLE  = "bigquery-public-data.hacker_news.comments"
+BQ_SOURCE_TABLE  = "bigquery-public-data.hacker_news.full"
 BQ_DEST_DATASET  = os.environ.get("BQ_DEST_DATASET", "hackernews_processed")
 BQ_DEST_TABLE    = f"{PROJECT_ID}.{BQ_DEST_DATASET}.comments_clean"
+BQ_LOCATION      = os.environ.get("BQ_LOCATION", "US")
 
 # ── Data config ──
 MIN_TEXT_LENGTH = int(os.environ.get("MIN_TEXT_LENGTH", "50"))
