@@ -27,3 +27,10 @@ checkpoints/
 Thumbs.db
 # Keep credentials folder in git (empty)
 !credentials/.gitkeep
+
+# Environment configs with secrets
+configs/dev.env
+configs/staging.env
+configs/prod.env
+
+# Keep examples — safe to commit
