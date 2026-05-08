@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Credentials — never commit
+credentials/*.json
+credentials/*.pem
+# Environment configs with secrets
+configs/dev.env
+configs/staging.env
+configs/prod.env
+.env
+# Ray
+/tmp/ray/
+# Checkpoints
+checkpoints/
+# Jupyter
+.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
+# Keep credentials folder in git (empty)
+!credentials/.gitkeep

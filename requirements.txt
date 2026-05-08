@@ -1,0 +1,27 @@
+# ── GCP ──
+google-cloud-bigquery==3.25.0
+google-cloud-storage==2.18.0
+google-cloud-bigquery-storage==2.26.0
+db-dtypes==1.3.0
+
+# ── Ray ──
+ray[default]==2.52.1
+
+# ── ML ──
+torch==2.7.0
+transformers==4.51.3
+datasets==3.5.0
+tokenizers==0.21.1
+
+# ── Data ──
+pandas==2.2.3
+numpy==2.2.5
+pyarrow==19.0.1
+
+# ── Utils ──
+python-dotenv==1.1.0
+tqdm==4.67.1
+
+# ── Testing ──
+pytest==8.3.5
+pytest-cov==6.1.0
